@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Famous Landmarks in New York City's Chinatown</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<style>
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'poppins';
+        color: darkred;
+    }
+
+    a{
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+    }
+    a:hover {
+        color: gold;
+    }
+</style>
+<div id="map"></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtYW50aGEtaHVhbmciLCJhIjoiY2xzamlhM3hzMnV1ZDJqcWwzMWpzeXJjayJ9.ehFBH0Jm3Uf4I_3uCeXl-g';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/samantha-huang/clsjioarl01e701qr0yjggp36',
+        center: [-73.9970,40.7158],
+        zoom: 15
+    });
+
+    map.on('load', () => {
+        map.addSource('places', {
+            // This GeoJSON contains features that include an "icon"
+            // property. The value of the "icon" property corresponds
+            // to an image in the Mapbox Streets style's sprite.
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Doyer Street</strong><p>One of the most-known streets in Chinatown, it runs from Pell Street to the intersection of Bowery, Chatham Square, and Division Street. It was formerly known as the "Bloody Angle" or "Murder Alley" in the early 1900s because many killings from Tong Gangs occurred within that street. Today, it is a famous tourist spot with many restaurants and stores, such as the Nom Wah Tea Parlor.</p>',
+                            'icon': 'highway-rest-area'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-73.998102, 40.714354]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Confucius Plaza</strong><p>An apartment complex built in 1975. It was the first major public-funded housing project built for Chinese-Americans. There is also a Confucius statue within the plaza, containing Confucius&#39;s sayings in both English and Chinese. </p>',
+                            'icon': 'landmark'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-73.9971, 40.7142]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Museum of Chinese in America (MOCA)</strong><p>Founded in 1980, the <a href="https://www.mocanyc.org/">Museum of Chinese in America</a> dedicates to show the lived experiences of Chinese-American culture and history. Their collection have contained more than 85,000 artifacts, covering 160 years of Chinese-American history.</p>',
+                            'icon': 'museum'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-73.9991, 40.7194]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Kimlau War Memorial</strong><p>Within Chatham Square lies the Kimlau War Memorial, a 19-foot granite arch. Designed by Poy G. Lee in 1962, the arch honors the Chinese-American soldiers who fought and died during World War II.</p>',
+                            'icon': 'landmark'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-73.998084, 40.713439]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Mahayana Buddhist Temple</strong><p>Located next to the Manhattan Bridge, the <a href="https://en.mahayana.us/">Mahayana Buddhist Temple</a> is the largest Buddhist temple in New York City, and has the largest Buddha statue in the city, scaling to 16 feet tall. Visitors can be found praying and paying tribute to loved ones.</p>',
+                            'icon': 'religious-buddhist'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-73.9954, 40.7161]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Columbus Park</strong><p>One of the oldest parks in New York City, was built in 1897 as "Mulberry Bend Park". It was later named "Columbus Park" after Christopher Columbus. The park consists of spray showers, water fountains, playgrounds, and basketball courts.</p>',
+                            'icon': 'park'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-74.0000, 40.7156]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Chinatown Ice Cream Factory</strong><p>Known as an "unofficial landmark", the <a href="https://www.chinatownicecreamfactory.com/">Chinatown Ice Cream Factory</a> is one of the oldest businesses in Chinatown, serving homemade ice cream for almost four decades. They have over 30 flavors of ice cream, some including traditional Asian flavors such as lychee, black sesame, and durian.</p>',
+                            'icon': 'ice-cream'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-73.9982645, 40.715451]
+                        },
+                    },
+                ]
+            }
+        });
+        // Add a layer showing the places.
+        map.addLayer({
+            'id': 'places',
+            'type': 'symbol',
+            'source': 'places',
+            'layout': {
+                'icon-image': ['get', 'icon'],
+                'icon-allow-overlap': true
+            }
+        });
+
+        // When a click event occurs on a feature in the places layer, open a popup at the
+        // location of the feature, with description HTML from its properties.
+        map.on('click', 'places', (e) => {
+            // Copy coordinates array.
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const description = e.features[0].properties.description;
+
+            // Ensure that if the map is zoomed out such that multiple
+            // copies of the feature are visible, the popup appears
+            // over the copy being pointed to.
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(description)
+                .addTo(map);
+        });
+
+        // Change the cursor to a pointer when the mouse is over the places layer.
+        map.on('mouseenter', 'places', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'places', () => {
+            map.getCanvas().style.cursor = '';
+        });
+    });
+</script>
+
+</body>
+</html>
