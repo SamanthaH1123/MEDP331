@@ -1,0 +1,71 @@
+body{
+	background-image: url("images/zoobg.jpg");
+	background-size: 100%;
+	text-align: center;
+}
+
+h1{
+	font-family: cabin sketch;
+	font-size: 50px;
+	background-color: saddlebrown;
+	color: white;
+	padding: 30px;
+	margin-left: 90px;
+	margin-right: 90px;
+	border-radius: 12px;
+}
+
+p{
+	font-size: 25px;
+}
+.question{
+	font-family: cabin;
+	background-color: moccasin;
+	padding: 20px;
+	margin-left: 300px;
+	margin-right: 300px;
+	border-radius: 12px;
+	border: darkgreen solid 8px;
+
+}
+
+input{
+	cursor: pointer;
+	text-align: left;
+}
+
+input:checkmark{
+	background-color: green;
+}
+
+#animaltxt{
+	font-family: cabin;
+	margin: 30px;
+	font-size: 20px;
+}
+
+.options{
+	text-align: left;
+}
+
+button{
+	margin: 20px;
+	background-color: darkgreen;
+	font-family: cabin;
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	border:darkgreen solid 3px;
+	border-radius: 16px;
+}
+button:hover{
+	transition: .5s;
+	background-color: moccasin;
+	color: darkgreen;
+	border: darkgreen solid 3px
+}
+img{
+	width: 60%;
+	border-radius: 50%;
+	border: darkgreen solid 8px;
+}
