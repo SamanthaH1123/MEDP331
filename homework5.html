@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Video and Audio Players</title>
+  <link rel="stylesheet" href="homework5.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Reenie+Beanie&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1>Sugar Rush Ride - Tomorrow X Together</h1>
+  <h2>Video Player</h2>
+  <div class="video-player">
+    <video class="video" width="60%">
+      <source src="srr_mv.mp4" type="video/mp4" />
+      <source src="srr_mv.mp4" type="video/webm" />
+      <p>Your browser doesn't support HTML5 video.</p>
+    </video>
+    <div class="videocontrols">
+      <div class="videoprogress">
+        <div class="videoprogressbar"></div>
+      </div>
+      <div class="controlbuttons">
+        <button class="controls__button toggleButton" title="Toggle Play">►</button>
+        <div class="volumecontrols">
+          <p>🔊</p>
+          <input type="range" name="volume" class="controls__slider" min="0" max="1" step="0.05" value="1" />
+        </div>
+        <div class="playbackcontrols">
+          <p>Playback Rate</p>
+          <button class="controls__button playback" data-playback-rate="0.5">0.5x</button>
+          <button class="controls__button playback" data-playback-rate="1.0">1x</button>
+          <button class="controls__button playback" data-playback-rate="1.5">1.5x</button>
+          <button class="controls__button playback" data-playback-rate="2.0">2x</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Audio Player</h2>
+  <div class="audio-player">
+    <div id="image">
+      <div id="vinyl"> <img src="images/vinyl.png"> </div>
+      <div id="cover"> <img src="images/albumcover.png"> </div>
+    </div>
+    <audio>
+      <source src="srr_audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="audiobar">
+      <div id="audiocurrent">0:00</div>
+      <div class="audioprogress">
+        <div class="audioprogressbar" id="audioprogressbar"></div>
+      </div>
+      <div id="audiototal">0:00</div>
+    </div>
+    <div class="audiocontrols">
+      <div class="controlrow">
+        <button id="audiobutton">►</button>
+        <div class="audiovolume">
+          <p>🔊</p>
+          <input type="range" id="audiovolume" min="0" max="1" step="0.01" value="1">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="homework5.js"></script>
+</body>
+
+</html>
