@@ -7,8 +7,10 @@
 </head>
 <body>
 
+	<h1>Horror Films</h1>
 	<div id="output"></div>
-
+  	<h1>PlayStation Games</h1>
+  	<div id="games"></div>
 
 	<script type="text/javascript">
 		// API endpoints
@@ -46,6 +48,8 @@ document.getElementById("output").innerHTML = myJSON;
   .then(data2 => {
     // Process data from the second API
     console.log('Data from API 2:', data2);
+	const myJSON2 = JSON.stringify(data2);
+    document.getElementById("games").innerHTML = myJSON2;
   })
   .catch(error => {
     console.error('Error:', error);
