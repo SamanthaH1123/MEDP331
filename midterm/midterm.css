@@ -86,8 +86,8 @@ input[type=text] {
   border: solid 25px #212121;
   border-radius: 8px;
   margin-top: 20px;
-  margin-left: 700px;
-  margin-right: 700px;
+  margin-left: 600px;
+  margin-right: 600px;
   position: relative;
   z-index: 1;
 }
