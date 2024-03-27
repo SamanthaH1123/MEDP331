@@ -1,0 +1,100 @@
+html {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: #383836
+}
+
+body {
+  margin: auto;
+}
+
+h1 {
+  font-family: palanquin dark;
+  font-size: 50px;
+  color: #black;
+
+}
+
+h2 {
+  font-family: palanquin dark;
+  font-size: 30px;
+  color: black;
+}
+
+p {
+  font-family: poppins;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.tv {
+  border: solid 40px #212121;
+  border-radius: 8px;
+  border-collapse: separate;
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 40px;
+  position: relative;
+}
+
+.static {
+  background-image: url(white-noise.gif);
+  inset: 0%;
+  position: absolute;
+  z-index: -1;
+  opacity: 15%;
+}
+
+img {
+  width: 30%;
+}
+
+button {
+  border: solid #212121 5px;
+  color: #212121;
+  padding: .5vw;
+  border-radius: 12px;
+  font-size: 16px;
+  background: transparent;
+  font-family: palanquin dark;
+  margin: 20px;
+}
+
+button:hover {
+  border: solid white 5px;
+  color: white;
+  transition: .6s;
+}
+
+.type {
+  position: flex;
+  display: inline;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  font-family: poppins;
+  font-size: 16px;
+  border: #212121 solid 5px;
+
+}
+
+.heading {
+  border: solid 25px #212121;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 700px;
+  margin-right: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+.headingbg {
+  background-image: url(white-noise.gif);
+  position: absolute;
+  inset: 0%;
+  opacity: 15%;
+}
