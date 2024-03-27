@@ -1,123 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Inclusive+Sans&family=Prompt&family=Sanchez&family=Varela+Round&display=swap" rel="stylesheet">	
-	<title>Samantha Huang</title>
-	<style>
-		body{
-			background-image:linear-gradient(to bottom right, honeydew, darkseagreen);
-		}
-		header{
-			background-color: white;
-			padding: 20px;
-			margin-bottom: 30px;
-			border-bottom: 5px solid seagreen;
-			border-radius: 20px;
-		}
-		h1{
-			font-family: inclusive sans;
-			font-size: 50px;
-			color: mediumseagreen;
-			text-align: center;
-
-		}
-		h2{
-			font-family: inclusive sans;
-			font-size: 30px;
-			color: mediumseagreen;
-			text-align: center;
-
-		}
-		.grid1 h2, .grid2 h2, .grid3 h2{
-			font-family: inclusive sans;
-			font-size: 30px;
-			color: mediumseagreen;
-			text-align: center;
-			text-decoration: underline;
-		}
-		a{
-			font-size: 20px;
-			font-family: gill sans;
-			text-decoration: none;
-			color: seagreen;
-		}
-		a:hover{
-			color: darkseagreen;
-		}
-		.container{
-			margin: 50px;
-			text-align: center;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 50px;
-
-		}
-		.grid1, .grid2, .grid3{
-			border: 10px solid seagreen;
-			padding: 20px;
-			box-shadow: 8px 8px 7px #4d4d4d;
-			border-radius: 25px;
-		}
-		.grid3{
-			margin: 50px;
-			text-align: center;
-		}
-		.grid3 a{
-			text-align: center;
-		}
-		hr{
-			border: 5px solid seagreen;
-			border-radius: 12px;
-		}
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Watch Files</title>
+  <link href="midterm.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-	<header>
-		<h1>Samantha Huang</h1>
-		<h2>Home Page</h2>
-	</header>
-	<h2>MEDP285: Web Production 1</h2>
-	<div class="container">
-	<div class="grid1">
-		<h2>Assignments</h2>
-		<div class="link">
-	<a href="medp285/assignment_1.html">Assignment 1</a>
-</div>
-<div class="link">
-	<a href="medp285/assignment_2.html">Assignment 2</a>
-</div>
-<div class="link">
-	<a href="medp285/assignment_3.html">Assignment 3</a>
-</div>
-<div class="link">
-	<a href="medp285/assignment_4.html">Assignment 4</a>
-</div>
-<div class="link">
-	<a href="medp285/assignment_5.html">Assignment 5</a>
-</div>
-</div>
-<div class="grid2">
-<h2>Net.art Project</h2>
-<a href="medp285/nastynets/index.html">Nasty Nets Presentation</a>
-</div>
-</div>
-<div class="grid3">
-	<h2>Final Project</h2>
-	<div class="link">
-	<a href="medp285/finalprojectproposal/page1.html">Final Project Proposal (Original Idea)</a>
-	</div>
-	<div class="link">
-	<a href="medp285/finalproject/index.html">Final Project</a>
-</div>
-</div>
-<hr>
-<h2>MEDP331: Web Production 2</h2>
-<div class="container">
-<h2>Assignments</h2>
-<a href="medp331/homework1.html">Static vs. Dynamic</a>
-<a href="medp331/homework2.html">Maps Make Space</a>
-<a href="medp331/homework3.html">MadLib</a>
-</div>
-	</body>
-	</html>
+  <div class="tv">
+    <h1>Watch Files</h1>
+    <p>Welcome to Watch Files! This site provides all information about any show or movie, from its plot to where to
+      watch them. To begin, click on one of the two buttons below.</p>
+    <a href="info.html"><button>Information</button></a>
+    <a href="sources.html"><button>Sources</button></a>
+    <h2>Instructions to Use the Site: Finding the IMDb id</h2>
+    <img src="id_url.png">
+    <p>The IMDb id of a film/show can be found in the URL.</p>
+    <div class="static">
+    </div>
+  </div>
+  <footer>
+    <p>©Samantha Huang</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
