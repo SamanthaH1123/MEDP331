@@ -86,10 +86,9 @@ input[type=text] {
   border: solid 25px #212121;
   border-radius: 8px;
   margin-top: 20px;
-  margin-left: 600px;
-  margin-right: 600px;
+  margin-left: 500px;
+  margin-right: 500px;
   position: relative;
-  z-index: 1;
 }
 
 .headingbg {
@@ -97,4 +96,5 @@ input[type=text] {
   position: absolute;
   inset: 0%;
   opacity: 15%;
+   z-index: -1;
 }
